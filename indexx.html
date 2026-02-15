@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Compleanno a sorpresa 🎁</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+  }
+  img {
+    width: 300px;
+    margin: 20px;
+    border-radius: 15px;
+  }
+  button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff69b4;
+    color: white;
+    transition: 0.2s;
+  }
+  button:hover {
+    background-color: #ff1493;
+  }
+  p {
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<h1 id="titolo">Buon compleanno! 🎉</h1>
+
+<img id="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+
+<div id="contenuto">
+  <button onclick="inizia()">Inizia il gioco 🎮</button>
+</div>
+
+<script>
+function inizia() {
+  document.getElementById("titolo").innerText = "Domanda 1:";
+  document.getElementById("contenuto").innerHTML = `
+    <p>Se fossimo personaggi di un cartone, chi saresti tu?</p>
+    <button onclick="domanda2()">Il/la più buffo/a 😄</button>
+    <button onclick="domanda2()">Il/la più coraggioso/a 💪</button>
+  `;
+}
+
+function domanda2() {
+  document.getElementById("titolo").innerText = "Domanda 2:";
+  document.getElementById("gif").src = "https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif";
+  document.getElementById("contenuto").innerHTML = `
+    <p>Qual è la cosa più divertente che facciamo insieme?</p>
+    <button onclick="domanda3()">Ridiamo fino a piangere 😂</button>
+    <button onclick="domanda3()">Facciamo scherzi folli 😏</button>
+  `;
+}
+
+function domanda3() {
+  document.getElementById("titolo").innerText = "Ultima domanda...";
+  document.getElementById("contenuto").innerHTML = `
+    <p>Se potessi scegliere, cosa faresti stasera?</p>
+    <button onclick="finale()">Avventura e risate! 😎</button>
+    <button onclick="finale()">Relax e coccole 💖</button>
+  `;
+}
+
+function finale() {
+  document.getElementById("titolo").innerText = "Sorpresa! 🎉";
+  document.getElementById("gif").src = "https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif";
+  document.getElementById("contenuto").innerHTML = `
+    <h2>Ho prenotato una cena speciale per il tuo compleanno! 🍽️✨</h2>
+    <p>Preparati per una serata divertente e dolce 💌</p>
+  `;
+}
+</script>
+
+</body>
+</html>
