@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Compleanno a sorpresa 🎁&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #fff0f5;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 12px 25px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #ff69b4;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #ff1493;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>p {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1 id="titolo"&gt;Buon compleanno! 🎉&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;img id="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="contenuto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="inizia()"&gt;Inizia il gioco 🎮&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function inizia() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("titolo").innerText = "Domanda 1:";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("contenuto").innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Se fossimo personaggi di un cartone, chi saresti tu?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="domanda2()"&gt;Il/la più buffo/a 😄&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="domanda2()"&gt;Il/la più coraggioso/a 💪&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function domanda2() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("titolo").innerText = "Domanda 2:";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("gif").src = "https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("contenuto").innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Qual è la cosa più divertente che facciamo insieme?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="domanda3()"&gt;Ridiamo fino a piangere 😂&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="domanda3()"&gt;Facciamo scherzi folli 😏&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function domanda3() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("titolo").innerText = "Ultima domanda...";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("contenuto").innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Se potessi scegliere, cosa faresti stasera?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="finale()"&gt;Avventura e risate! 😎&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="finale()"&gt;Relax e coccole 💖&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function finale() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("titolo").innerText = "Sorpresa! 🎉";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("gif").src = "https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById("contenuto").innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Ho prenotato una cena speciale per il tuo compleanno! 🍽️✨&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Preparati per una serata divertente e dolce 💌&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
