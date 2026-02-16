@@ -35,7 +35,7 @@
 </head>
 <body>
 
-<h1 id="titolo">Buon compleanno! 🎉</h1>
+<h1 id="titolo">Buon compleanno!🎉</h1>
 
 <img id="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
 
@@ -47,9 +47,9 @@
 function inizia() {
   document.getElementById("titolo").innerText = "Domanda 1:";
   document.getElementById("contenuto").innerHTML = `
-    <p>Se potessi partire ora, dove andresti tu?</p>
-    <button onclick="domanda2()">Madeira </button>
-    <button onclick="domanda2()">Norvegia </button>
+    <p>Che tipo di regali preferisci?</p>
+    <button onclick="domanda2()">Qualcosa di sorprendente </button>
+    <button onclick="domanda2()">Qualcosa di personale </button>
   `;
 }
 
@@ -57,14 +57,24 @@ function domanda2() {
   document.getElementById("titolo").innerText = "Domanda 2:";
   document.getElementById("gif").src = "https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif";
   document.getElementById("contenuto").innerHTML = `
-    <p>Qual è la cosa più divertente che facciamo insieme?</p>
-    <button onclick="domanda3()">Mangiare 😂</button>
+    <p>Qual è l'attività che ti piace di più fare insieme?</p>
+    <button onclick="domanda3()">Mangiare lol </button>
     <button onclick="domanda3()">Visitare un museo </button>
   `;
 }
-
+  
 function domanda3() {
-  document.getElementById("titolo").innerText = "Ultima domanda...";
+  document.getElementById("titolo").innerText = "Domanda 3:";
+  document.getElementById("gif").src = "https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif";
+  document.getElementById("contenuto").innerHTML = `
+    <p>Cosa ti piacerebbe provare insieme? </p>
+    <button onclick="domanda3()">Scoprire un nuovo posto </button>
+    <button onclick="domanda3()">Cucinare (*non scegliere questaa) </button>
+  `;
+}
+  
+function domanda4() {
+  document.getElementById("titolo").innerText = "Domanda 4:";
   document.getElementById("contenuto").innerHTML = `
     <p>Se potessi scegliere, cosa faresti stasera?</p>
     <button onclick="finale()">Verrei a Milano </button>
@@ -72,6 +82,15 @@ function domanda3() {
   `;
 }
 
+function domanda5() {
+  document.getgetElementById("titolo").innerText = "Ultima domanda...";
+  document.getElementById("contenuto").innerHTML = `
+    <p>Ti sta piacendo questo gioco?</p>
+    <button onclick="finale()">Si </button>
+    <button onclick="finale()">Ovviamente si </button>
+  `;
+}
+  
 function finale() {
   document.getElementById("titolo").innerText = "Sorpresa! 🎉";
   document.getElementById("gif").src = "https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif";
