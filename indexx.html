@@ -40,16 +40,16 @@
 <img id="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
 
 <div id="contenuto">
-  <button onclick="inizia()">Inizia il gioco 🎮</button>
+  <button onclick="inizia()">Start </button>
 </div>
 
 <script>
 function inizia() {
   document.getElementById("titolo").innerText = "Domanda 1:";
   document.getElementById("contenuto").innerHTML = `
-    <p>Se fossimo personaggi di un cartone, chi saresti tu?</p>
-    <button onclick="domanda2()">Il/la più buffo/a 😄</button>
-    <button onclick="domanda2()">Il/la più coraggioso/a 💪</button>
+    <p>Se potessi partire ora, dove andresti tu?</p>
+    <button onclick="domanda2()">Madeira </button>
+    <button onclick="domanda2()">Norvegia </button>
   `;
 }
 
@@ -58,8 +58,8 @@ function domanda2() {
   document.getElementById("gif").src = "https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif";
   document.getElementById("contenuto").innerHTML = `
     <p>Qual è la cosa più divertente che facciamo insieme?</p>
-    <button onclick="domanda3()">Ridiamo fino a piangere 😂</button>
-    <button onclick="domanda3()">Facciamo scherzi folli 😏</button>
+    <button onclick="domanda3()">Mangiare 😂</button>
+    <button onclick="domanda3()">Visitare un museo </button>
   `;
 }
 
